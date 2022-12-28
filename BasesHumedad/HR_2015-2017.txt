@@ -1,0 +1,129 @@
+
+HOMOGEN() APPLICATION OUTPUT  (From R's contributed package 'climatol' 3.1.1)
+
+=========== Homogenization of BasesHumedad/HR, 2015-2017. (Thu Nov 17 21:06:58 2022)
+
+Parameters: varcli=BasesHumedad/HR anyi=2015 anyf=2017 suf=NA nm=NA nref=10,10,4 std=3 swa=NA ndec=1 dz.max=3.5 dz.min=-6.5 wd=0,0,100 snht1=0 snht2=0 tol=0.02 maxdif=0.05 mxdif=0.05 maxite=999 force=FALSE wz=0.001 trf=0 mndat=NA gp=3 ini=NA na.strings=NA vmin=0 vmax=NA nclust=100 cutlev=NA grdcol=#666666 mapcol=#666666 hires=TRUE expl=FALSE metad=TRUE sufbrk=m tinc=NA tz=UTC cex=1.2 verb=TRUE
+
+Data matrix: 1095 data x 9 stations
+
+-------------------------------------------
+Stations in the 2 clusters:
+
+$`1`
+     Z Code   Name
+1 3064  E05   Alao
+2 3467  E09 Atillo
+4 2754  E01 Espoch
+5 2471  E08  Matus
+7 3546  E04  Tixan
+8 2840  E03 Tunshi
+9 3642  E02 Urbina
+
+$`2`
+        Z Code     Name
+3  330.95  E06  Cumanda
+6 1483.00  E07 Multitud
+
+---------------------------------------------
+Computing inter-station distances:  1  2  3  4  5  6  7  8
+
+Splitting the series following the metadata file...:
+
+E02(9) breaks at 2016-06-01
+E02(9) breaks at 2016-11-01 Fragment with less than 182.5 data DELETED
+
+
+Update number of series:  9 + 1 = 10 
+
+
+
+========== STAGE 3 (Final computation of all missing data) ==========
+
+Computing inter-station weights... (done)
+
+Computation of missing data with outlier removal
+(Suggested data replacements are provisional)
+
+The following lines will have one of these formats:
+  Station(rank) Date: Observed -> Suggested (Anomaly, in std. devs.)
+  Iteration Max.data.difference (Station_code)
+E05(1) 2017-03-14: 92.93872 -> 81.7 (3.5)
+E06(3) 2015-12-13: 97.78025 -> 77.2 (4.09)
+E01(4) 2015-07-14: 75.20471 -> 63.8 (4.39)
+E08(5) 2015-11-04: 77.406 -> 65.2 (3.93)
+E08(5) 2016-03-26: 73.11628 -> 96.2 (-7.46)
+E08(5) 2016-03-27: 73.37106 -> 94.2 (-6.75)
+E08(5) 2016-10-27: 73.36954 -> 60 (4.32)
+E08(5) 2016-11-16: 68.63002 -> 56.9 (3.78)
+E07(6) 2016-01-28: 91.29693 -> 21.9 (4)
+E04(7) 2015-02-20: 81.05161 -> 36.3 (4.45)
+E04(7) 2016-11-15: 78.72382 -> 40.1 (3.84)
+E04(7) 2016-11-16: 66.58213 -> 21.2 (4.51)
+E04(7) 2016-11-20: 58.01251 -> 12.8 (4.49)
+E03(8) 2016-01-27: 70.60124 -> 60.1 (3.62)
+E03(8) 2016-01-28: 62.66039 -> 50.2 (4.31)
+E03(8) 2016-12-22: 80.46574 -> 68.8 (4.03)
+E03(8) 2017-01-23: 79.2952 -> 65.2 (4.86)
+E03(8) 2017-01-24: 80.46574 -> 64 (5.71)
+E09(2) 2017-01-23: 86.25549 -> 73.2 (4)
+E09(2) 2017-01-24: 86.25549 -> 71.7 (4.48)
+E08(5) 2016-01-28: 71.15561 -> 56.9 (4.88)
+E04(7) 2015-02-19: 89.76116 -> 54.5 (3.55)
+E03(8) 2015-09-14: 65.3978 -> 54.5 (3.97)
+2 -35.294 (E04)
+E05(1) 2017-04-20: 92.76988 -> 81.8 (3.51)
+E08(5) 2016-01-27: 77.2223 -> 67.1 (3.54)
+3 -10.927 (E05)
+E08(5) 2015-02-20: 75.64264 -> 65.5 (3.53)
+4 -10.095 (E08)
+5 -0.191 (E08)
+6 0.065 (E02)
+7 0.033 (E02)
+
+Last series readjustment (please, be patient...)
+
+======== End of the missing data filling process, after 12.7 secs 
+
+----------- Final computations:
+
+ACmx: Station maximum absolute autocorrelations of anomalies
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.350   0.460   0.540   0.551   0.630   0.790 
+
+SNHT: Standard normal homogeneity test (on anomaly series)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  11.80   20.27   27.45   29.82   36.98   59.10 
+
+RMSE: Root mean squared error of the estimated data
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  2.724   2.920   3.555   5.464   4.716  17.233 
+
+POD: Percentage of original data
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   38.0    75.5    93.0    82.5    99.0    99.0 
+
+   ACmx SNHT RMSE POD Code  Name    
+1  0.46 31.2  3.1 99  E05   Alao    
+2  0.60 43.0  3.2 98  E09   Atillo  
+3  0.42 35.1  5.0 86  E06   Cumanda 
+4  0.35 23.7  2.7 72  E01   Espoch  
+5  0.51 14.8  2.9 99  E08   Matus   
+6  0.79 22.3 17.2 88  E07   Multitud
+7  0.71 59.1 10.0 99  E04   Tixan   
+8  0.57 37.6  2.7 99  E03   Tunshi  
+9  0.46 11.8  3.9 38  E02   Urbina  
+10 0.64 19.6  3.9 47  E02-2 Urbina-2
+
+----------- Generated output files: -------------------------
+
+BasesHumedad/HR_2015-2017.txt :  This text output 
+BasesHumedad/HR_2015-2017_out.csv :  List of corrected outliers 
+BasesHumedad/HR_2015-2017_brk.csv :  List of corrected breaks 
+BasesHumedad/HR_2015-2017.pdf :  Diagnostic graphics 
+BasesHumedad/HR_2015-2017.rda :  Homogenization results. Postprocess with (examples):
+   dahstat('BasesHumedad/HR',2015,2017) #get averages in file BasesHumedad/HR_2015-2017-me.csv 
+   dahstat('BasesHumedad/HR',2015,2017,stat='tnd') #get OLS trends and their p-values 
+   dahgrid('BasesHumedad/HR',2015,2017,grid=YOURGRID) #get homogenized grids 
+   ... (See other options in the package documentation)
+

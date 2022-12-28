@@ -1,0 +1,8 @@
+
+HOMOGEN() APPLICATION OUTPUT  (From R's contributed package 'climatol' 3.1.1)
+
+=========== Homogenization of Propuesta1/HRP1, 2015-2017. (Thu Mar 03 15:50:24 2022)
+
+Parameters: varcli=Propuesta1/HRP1 anyi=2015 anyf=2017 suf=NA nm=NA nref=10,10,4 std=3 swa=NA ndec=1 dz.max=3.5 dz.min=-3.5 wd=0,0,100 snht1=57.48738 snht2=57.48738 tol=0.02 maxdif=0.05 mxdif=0.05 maxite=999 force=FALSE wz=0.001 trf=0 mndat=NA gp=3 ini=NA na.strings=NA vmin=0 vmax=100 nclust=100 cutlev=NA grdcol=#666666 mapcol=#666666 hires=TRUE expl=FALSE metad=FALSE sufbrk=m tinc=NA tz=UTC cex=1.2 verb=TRUE
+
+Data matrix: 0 data x 9 stations
