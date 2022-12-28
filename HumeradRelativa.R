@@ -51,7 +51,7 @@ View(est.c)
 dahstat('BasesHumedad/HR', 2015, 2017, stat='series')
 
 #######################################################################
-### Homo. mediante Climatol con el SNHT calculado calculado con MBB ###
+### Homo. by Climatol with the calculated SNHT calculated with MBB ###
 #######################################################################
 
 # Lectura de la base de datos con series homogenizadas
