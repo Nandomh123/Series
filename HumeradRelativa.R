@@ -1,5 +1,5 @@
 #######################################################################
-############ Homogenización mediante el paquete R Climatol ############
+############ Homogenization using the R Climatol package############
 #######################################################################
 
 ipak <- function(pkg){
@@ -468,7 +468,6 @@ ggplot(Urbina, aes(x = Fecha, y = value, color = variable)) + geom_line()+labs(x
 Tunshi1 <- Base$E03
 Tunshi2 <- BaseMMB$`E03-2`
 Tunshi3 <- BaseSB$`E03-2`
-
 
 
 Tunshi <- data.frame(Fecha,Tunshi1,Tunshi2,Tunshi3)
